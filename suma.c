@@ -7,10 +7,10 @@
 	int a, b , suma;
 	char respuesta[100];
 
-
 	printf("Hola como estas? ");
-	scanf("%99s", respuesta);
+	fgets(respuesta, sizeof(respuesta), stdin);
 
+	printf("Listo para ver mis habilidades?\n  ");
 
 	printf("Escriba el primer numero: ");
 	scanf("%d", &a);
@@ -21,7 +21,6 @@
 	suma = a + b;
 
 	printf("La suma es %d.\n", suma);
-	
 	printf("Gracias por participar .\n");
 
 	return 0;
